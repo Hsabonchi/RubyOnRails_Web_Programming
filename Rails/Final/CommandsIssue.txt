@@ -1,0 +1,102 @@
+rails new final
+rails generate scaffold plane  manufacturer:string  model:string  seatts:integer
+rake db:migrate
+
+I feed the seed.db
+Plane.create!(:manufacturer =>"Boeing" ,:model =>"747-100" ,:seatts =>400)
+Plane.create!(:manufacturer =>"Boeing" ,:model =>"737-700" ,:seatts =>128)
+Plane.create!(:manufacturer =>"Airbus" ,:model =>"A330" ,:seatts =>350)
+Plane.create!(:manufacturer =>"Airbus:" ,:model =>"A321" ,:seatts =>135)
+
+                                                                                                  references
+rails generate scaffold planeflight airline:string number:integer  fromcity:string  tocity:string plane:references
+
+Planeflight.create!(:airline =>"United" ,:number =>101 ,:fromcity =>"LosAngeles",:tocity => "Tokyo")
+Planeflight.create!(:airline =>"SouthWest" ,:number =>3085 ,:fromcity =>"Seattle",:tocity => "Boston")
+Planeflight.create!(:airline =>"American" ,:number =>31 ,:fromcity =>"Hong kong",:tocity => "London")
+Planeflight.create!(:airline =>"Alaska" ,:number =>760 ,:fromcity =>"Burbamk",:tocity => "Seattle")
+
+
+Test/Fixture/Plane
+one:
+  manufacturer: Boeing
+  model: 747-100
+  seatts: 400
+
+two:
+  manufacturer: Boeing
+  model: 737-700
+  seatts: 128
+
+three:
+  manufacturer: Airbus
+  model: A330
+  seatts: 350
+
+  four:
+    manufacturer: Airbus
+    model: A330
+    seatts: 135
+
+
+Test/Fixture/Planeflight
+    one:
+      airline: United
+      number: 101
+      fromcity: LosAngeles
+      tocity: Tokyo
+      refrences:
+
+    two:
+      airline: SouthWest
+      number: 3085
+      fromcity: Seattle
+      tocity: Boston
+      refrences:
+
+
+    three:
+      airline: American
+      number: 31
+      fromcity: Hong kong
+      tocity: London
+      refrences:
+
+    three:
+      airline: Alaska
+      number: 760
+      fromcity: Burbamk
+      tocity: Seattle
+      refrences:
+
+
+
+
+        test "there should be 5 records" do
+          counter = Planeflight.count()
+          assert_equal( counter, 5, "not fix records found" )
+        end
+
+        test "computing solutions should have the biggest quantity" do
+          count = 0
+          cust = nil
+          planeflight = Planeflight.all()
+          planeflight.each do |invoice|
+              if (planeflight.airline > count)
+                 count = planeflight.airline
+                 cust = planeflight.number
+              end
+          end
+          assert_equal(cust.manufacturer, "Computing Solutions", "Computing Solutions is not the match" )
+        end
+
+        test "there is no invoice for customer Ballard Computer" do
+          fail = false
+          planeflight = Planeflight.all()
+          planeflight.each do |invoice|
+              if (planeflight.plane.seatts == "400")
+                 fail = true;
+              end
+          end
+          assert( !fail, "Ballard Computer had an invoice" )
+        end

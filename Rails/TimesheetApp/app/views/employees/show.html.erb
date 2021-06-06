@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p style="padding-bottom: 10px">
+  <strong>Firstname :</strong>
+  <%= @employee.Firstname %>
+</p>
+
+<p style="padding-bottom: 10px">
+  <strong>Lastname:</strong>
+  <%= @employee.Lastname %>
+</p>
+
+<p>
+  <strong>Deparment:</strong>
+  <%= @employee.Deparment %>
+</p>
+
+<p>
+  <strong>Timein:</strong>
+  <%= @employee.Timein %>
+</p>
+
+<p>
+  <strong>Timeout:</strong>
+  <%= @employee.Timeout %>
+</p>
+
+<p>
+  <strong>Notification:</strong>
+  <%= @employee.Notification %>
+</p>
+
+<%= link_to 'Edit', edit_employee_path(@employee) %> |
+<%= link_to 'Back', employees_path %>

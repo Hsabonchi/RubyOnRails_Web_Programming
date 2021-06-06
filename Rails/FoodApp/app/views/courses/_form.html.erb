@@ -1,0 +1,42 @@
+<%= form_for(course) do |f| %>
+  <% if course.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(course.errors.count, "error") %> prohibited this course from being saved:</h2>
+
+      <ul>
+      <% course.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field" >
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= f.label :portion %>
+    <%= f.number_field :portion %>
+  </div>
+
+  <div class="field">
+    <%= f.label :unitofmeasure %>
+    <%= f.text_field :unitofmeasure %>
+  </div>
+
+  <div class="field" class="green">
+    <%= f.label :calories %>
+    <%= f.number_field :calories %>
+  </div>
+
+  <div class="field">
+    <%= f.label :meal %>
+    <%= f.text_field :meal %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

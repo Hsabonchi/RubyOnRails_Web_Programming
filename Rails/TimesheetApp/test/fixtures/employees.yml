@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  Firstname: MyString
+  Lastname: MyString
+  Deparment: MyString
+  Timein: 2017-05-10 12:00:26
+  Timeout: 2017-05-10 12:00:26
+  Notification: MyText
+
+two:
+  Firstname: MyString
+  Lastname: MyString
+  Deparment: MyString
+  Timein: 2017-05-10 12:00:26
+  Timeout: 2017-05-10 12:00:26
+  Notification: MyText

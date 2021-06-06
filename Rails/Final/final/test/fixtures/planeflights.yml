@@ -1,0 +1,30 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  airline: United
+  number: 101
+  fromcity: LosAngeles
+  tocity: Tokyo
+  refrences:
+
+two:
+  airline: SouthWest
+  number: 3085
+  fromcity: Seattle
+  tocity: Boston
+  refrences:
+
+
+three:
+  airline: American
+  number: 31
+  fromcity: Hong kong
+  tocity: London
+  refrences:
+
+four:
+  airline: Alaska
+  number: 760
+  fromcity: Burbamk
+  tocity: Seattle
+  refrences:

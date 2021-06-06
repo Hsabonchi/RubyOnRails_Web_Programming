@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Airline:</strong>
+  <%= @planefligh.airline %>
+</p>
+
+<p>
+  <strong>Number:</strong>
+  <%= @planefligh.number %>
+</p>
+
+<p>
+  <strong>Fromcity:</strong>
+  <%= @planefligh.fromcity %>
+</p>
+
+<p>
+  <strong>Tocity:</strong>
+  <%= @planefligh.tocity %>
+</p>
+
+<p>
+  <strong>Plane:</strong>
+  <%= @planefligh.plane %>
+</p>
+
+<%= link_to 'Edit', edit_planefligh_path(@planefligh) %> |
+<%= link_to 'Back', planeflighs_path %>

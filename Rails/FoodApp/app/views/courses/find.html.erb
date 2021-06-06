@@ -1,0 +1,26 @@
+<h1>Listing Food</h1>
+<table>
+<tr>
+<th>Name</th>
+<th>portion</th>
+<th>unitofmeasure </th>
+<th>calories</th>
+<th>Meal</th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+
+<% @courses.each do |course| %>
+<tr>
+  <td><%= course.name %></td>
+  <td><%= course.portion %></td>
+  <td><%= course.unitofmeasure %></td>
+  <td><%= course.calories %></td>
+  <td><%= course.meal %></td>
+  <td><%= link_to 'Show', course %></td>
+  <td><%= link_to 'Edit', edit_course_path(course) %></td>
+  <td><%= link_to 'Destroy', course, :confirm => 'Are you sure?', :method => :delete %></td>
+</tr>
+<% end %>
+</table>

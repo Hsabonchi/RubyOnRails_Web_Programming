@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @course.name %>
+</p>
+
+<p>
+  <strong>Portion:</strong>
+  <%= @course.portion %>
+</p>
+
+<p>
+  <strong>Unitofmeasure:</strong>
+  <%= @course.unitofmeasure %>
+</p>
+
+<p>
+  <strong>Calories:</strong>
+  <%= @course.calories %>
+</p>
+
+<p>
+  <strong>Meal:</strong>
+  <%= @course.meal %>
+</p>
+
+<%= link_to 'Edit', edit_course_path(@course) %> |
+<%= link_to 'Back', courses_path %>

@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Planeflighs</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Airline</th>
+      <th>Number</th>
+      <th>Fromcity</th>
+      <th>Tocity</th>
+      <th>Plane</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @planeflighs.each do |planefligh| %>
+      <tr>
+        <td><%= planefligh.airline %></td>
+        <td><%= planefligh.number %></td>
+        <td><%= planefligh.fromcity %></td>
+        <td><%= planefligh.tocity %></td>
+        <td><%= planefligh.plane %></td>
+        <td><%= link_to 'Show', planefligh %></td>
+        <td><%= link_to 'Edit', edit_planefligh_path(planefligh) %></td>
+        <td><%= link_to 'Destroy', planefligh, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Planefligh', new_planefligh_path %>

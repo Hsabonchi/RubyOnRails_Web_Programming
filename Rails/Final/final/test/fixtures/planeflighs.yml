@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  airline: MyString
+  number: 1
+  fromcity: MyString
+  tocity: MyString
+  plane: one
+
+two:
+  airline: MyString
+  number: 1
+  fromcity: MyString
+  tocity: MyString
+  plane: two

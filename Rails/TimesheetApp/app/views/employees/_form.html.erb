@@ -1,0 +1,47 @@
+<%= form_for(employee) do |f| %>
+  <% if employee.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(employee.errors.count, "error") %> prohibited this employee from being saved:</h2>
+
+      <ul>
+      <% employee.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field"  style="padding-bottom: 10px">
+    <%= f.label :Firstname %>
+    <%= f.text_field :Firstname %>
+  </div>
+
+  <div class="field" style="padding-bottom: 10px">
+    <%= f.label :Lastname %>
+    <%= f.text_field :Lastname %>
+  </div>
+
+  <div class="field"  style="padding-bottom: 10px" >
+    <%= f.label :Deparment %>
+    <%= f.text_field :Deparment ,:value => "CS"%>
+  </div>
+
+  <div class="field"   style="padding-bottom: 10px">
+    <%= f.label :Timein %>
+    <%= f.datetime_select :Timein,ampm: true,:class => 'datepicker', :size => 10, :maxlength => 10 , prompt: {day: 'Choose day', month: 'Choose month', year: 'Choose year'}%>
+  </div>
+
+  <div class="field"  style="padding-bottom: 10px" >
+    <%= f.label :Timeout %>
+    <%= f.datetime_select :Timeout,ampm: true,:class => 'datepicker', :size => 10, :maxlength => 10, prompt: {day: 'Choose day', month: 'Choose month', year: 'Choose year'} %>
+  </div>
+
+  <div class="field"   style="padding-bottom: 10px">
+    <%= f.label :Notification %>
+    <%= f.text_area :Notification %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
