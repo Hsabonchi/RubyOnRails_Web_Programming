@@ -32,4 +32,6 @@
 
 ## 
 * [CS50 Ruby on Rails](https://www.youtube.com/watch?v=gTBCHu0btn8)
-* [worker-rub](https://www.youtube.com/watch?v=aaGSh38nzq8)
+* sideqik -rub
+   * [job-worker-sidekiq-1](https://www.youtube.com/watch?v=aaGSh38nzq8)
+   * [job-worker-sidekiq-2](https://www.youtube.com/watch?v=vvNJlgiQtGQ)
