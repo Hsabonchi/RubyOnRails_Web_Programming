@@ -25,9 +25,11 @@
 > @var : is global variable where you can pass it to your view
 
 ### launch the console with this command:
-- rails c  
+- rails c    
+  - Start the Rails console 
 - ENV['JWKS_RAW'] 
 
 
 ## 
-[CS50 Ruby on Rails](https://www.youtube.com/watch?v=gTBCHu0btn8)
+* [CS50 Ruby on Rails](https://www.youtube.com/watch?v=gTBCHu0btn8)
+* [worker-rub](https://www.youtube.com/watch?v=aaGSh38nzq8)
