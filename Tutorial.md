@@ -27,11 +27,17 @@
 ### launch the console with this command:
 - rails c    
   - Start the Rails console 
-- ENV['JWKS_RAW'] 
+- ENV['JWKS_RAW']
+ 
+### ActiveRecord
 
-
+* Team.has_many(:events ,through: :team_event )
+* Event.preload(:teams)
+* Event.where(scheduled_at: 24.hours.ago..Time.now)
+* @b.joins(:teams)
 ## 
 * [CS50 Ruby on Rails](https://www.youtube.com/watch?v=gTBCHu0btn8)
 * sideqik -rub
    * [job-worker-sidekiq-1](https://www.youtube.com/watch?v=aaGSh38nzq8)
    * [job-worker-sidekiq-2](https://www.youtube.com/watch?v=vvNJlgiQtGQ)
+* https://stackoverflow.com/questions/22851676/rails-list-created-updated-records-within-last-24-hours
