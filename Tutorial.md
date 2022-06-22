@@ -32,6 +32,15 @@
 ### ActiveRecord
 
 * Team.has_many(:events ,through: :team_event )
+
+
+mutation {
+  userSignUp(email: "kyle+testcoaching@vanta.gg", authId: "auth0|62b375ca48b94e0a9efb5ec9", role: "coach", token: "8@LVoXK_xcHXdmTQ*dYYj9LnLpk_J4w7PLzqD3VQXXR_rwQb") {
+    user {
+      authId
+    }
+  }
+}
 * Event.preload(:teams)
 * Event.where(scheduled_at: 24.hours.ago..Time.now)
 * @b.joins(:teams)
