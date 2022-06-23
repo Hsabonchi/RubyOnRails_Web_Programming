@@ -41,6 +41,7 @@ mutation {
     }
   }
 }
+bundle exec rails  db:drop
 * Event.preload(:teams)
 * Event.where(scheduled_at: 24.hours.ago..Time.now)
 * @b.joins(:teams)
