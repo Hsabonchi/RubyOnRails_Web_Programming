@@ -48,7 +48,7 @@ bundle exec rails  db:drop
 Event.first.teams[0].players[0].email
  Event.first.coach.user
  
- bundle exec
+bundle exec rails c
   rails 
 ## 
 * [CS50 Ruby on Rails](https://www.youtube.com/watch?v=gTBCHu0btn8)
