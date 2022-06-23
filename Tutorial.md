@@ -24,9 +24,14 @@
 
 > @var : is global variable where you can pass it to your view
 
-### launch the console with this command:
-- rails c    
-  - Start the Rails console 
+
+| Syntax      | Description |
+| ----------- | ----------- |
+| rails c      | Start the Rails console.|
+| reload!   |  allow you to make changes to your code, and continue to use the same console session without having to restart.|
+                       
+
+ 
 - ENV['JWKS_RAW']
  
 ### ActiveRecord
