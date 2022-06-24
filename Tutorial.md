@@ -29,9 +29,14 @@
 | ----------- | ----------- |
 | rails c      | Start the Rails console.|
 | reload!   |  allow you to make changes to your code, and continue to use the same console session without having to restart.|
-                       
+                      
 
- 
+
+| Syntax      | Description |
+| ----------- | ----------- |
+| bundle exec rails dp:drop | drop the database|
+|  bundle exec rails dp:create  | create database|
+| bundle exec rails dp:seed| seed|
 - ENV['JWKS_RAW']
  
 ### ActiveRecord
