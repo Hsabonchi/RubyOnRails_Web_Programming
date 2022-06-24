@@ -56,6 +56,7 @@ Event.first.teams[0].players[0].email
 bundle exec rails c
   rails 
 ## 
+* (cm lectures)(https://67272.cmuis.net/lectures)
 * [CS50 Ruby on Rails](https://www.youtube.com/watch?v=gTBCHu0btn8)
 * sideqik -rub
    * [job-worker-sidekiq-1](https://www.youtube.com/watch?v=aaGSh38nzq8)
