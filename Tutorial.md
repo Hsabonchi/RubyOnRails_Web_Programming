@@ -60,6 +60,17 @@ Event.first.teams[0].players[0].email
  
 bundle exec rails c
   rails 
+  `
+  merge locally
+  git checkout staging
+git pull origin staging
+git merge your-branch-name-here
+git push origin staging
+  `
+  
+  
+  
+  
 ## 
 * [cm lectures](https://67272.cmuis.net/lectures)
 * [CS50 Ruby on Rails](https://www.youtube.com/watch?v=gTBCHu0btn8)
