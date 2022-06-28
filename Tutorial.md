@@ -79,10 +79,31 @@ heroku run rails c -a vanta-api-staging
   
  
 <pre>
- Module not found: Can't resolve 'react-is'
-  *[module not found resolve](https://bobbyhadz.com/blog/react-module-not-found-cant-resolve)
+ * Module not found: Can t resolve react-is.
+  *[resolve](https://bobbyhadz.com/blog/react-module-not-found-cant-resolve)
 </pre>
  
+ ---
+ 
+ ###
+ * Run Sidekiq in a new tab/session in your terminal
+  * `bundle exec sidekiq`
+ ---
+ 
+player = Event.first.teams[0].players[0]
+parent = # Create your parent here
+player.parents << parent
+ 
+ ---
+### Terminal history
+cat ~/.zsh_history
+ 
+ parent =Parent.new( )
+ parent.id="123445667788"
+  parent.created_at=time.now.getutc
+  parent.updated_at=Time.now.getutc
+  player.parents << parent
+  player = Event.first.teams[0].players[0].emails
 ## 
 * [cm lectures](https://67272.cmuis.net/lectures)
 * [CS50 Ruby on Rails](https://www.youtube.com/watch?v=gTBCHu0btn8)
