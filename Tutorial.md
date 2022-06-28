@@ -44,13 +44,16 @@
 * Team.has_many(:events ,through: :team_event )
 
 
-mutation {
-  userSignUp(email: "kyle+testcoaching@vanta.gg", authId: "auth0|62b375ca48b94e0a9efb5ec9", role: "coach", token: "8@LVoXK_xcHXdmTQ*dYYj9LnLpk_J4w7PLzqD3VQXXR_rwQb") {
-    user {
-      authId
+### Altair SignUp Query
+<pre>
+  mutation {
+    userSignUp(email: "kyle+testcoaching@vanta.gg", authId: "auth0|62b375ca48b94e0a9efb5ec9", role: "coach", token: "8@LVoXK_xcHXdmTQ*dYYj9LnLpk_J4w7PLzqD3VQXXR_rwQb") {
+      user {
+        authId
+      }
     }
   }
-}
+</pre>
 bundle exec rails  db:drop
 * Event.preload(:teams)
 * Event.where(scheduled_at: 24.hours.ago..Time.now)
@@ -60,13 +63,14 @@ Event.first.teams[0].players[0].email
  
 bundle exec rails c
   rails 
-  `
+ 
   merge locally
-  git checkout staging
+<pre>
+git checkout staging
 git pull origin staging
 git merge your-branch-name-here
 git push origin staging
-  `
+</pre>
 
 <pre>
 https://dashboard.heroku.com/apps/vanta-api-staging
@@ -75,7 +79,8 @@ heroku run rails c -a vanta-api-staging
   
  
 <pre>
- Module not found: Can't resolve 'react-is'. [solution](https://bobbyhadz.com/blog/react-module-not-found-cant-resolve)
+ Module not found: Can't resolve 'react-is'
+  *[module not found resolve](https://bobbyhadz.com/blog/react-module-not-found-cant-resolve)
 </pre>
  
 ## 
