@@ -15,9 +15,9 @@
 </ul>
 
 ---
-
+<pre>
 <h5>to list all your defined routes, which are useful for tracking down routing problems in your application, or giving you a good overview of the URLs in an application you're trying to get familiar with.</h5>
-
+</pre>
   >rails routes
  
 ---
@@ -88,6 +88,7 @@ heroku run rails c -a vanta-api-staging
  ###
  * Run Sidekiq in a new tab/session in your terminal
   * `bundle exec sidekiq`
+ * PracticeRemindersJob.perform_async 
  ---
  
 player = Event.first.teams[0].players[0]
