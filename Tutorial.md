@@ -73,7 +73,11 @@ https://dashboard.heroku.com/apps/vanta-api-staging
 heroku run rails c -a vanta-api-staging
 </pre>
   
-  
+ 
+<pre>
+ Module not found: Can't resolve 'react-is'. [solution](https://bobbyhadz.com/blog/react-module-not-found-cant-resolve)
+</pre>
+ 
 ## 
 * [cm lectures](https://67272.cmuis.net/lectures)
 * [CS50 Ruby on Rails](https://www.youtube.com/watch?v=gTBCHu0btn8)
