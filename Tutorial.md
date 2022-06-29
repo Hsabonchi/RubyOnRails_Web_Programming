@@ -42,8 +42,10 @@
 ### ActiveRecord
 
 * Team.has_many(:events ,through: :team_event )
-
-
+* rails generate model ModelName ColumnOneName:ColumnOneType ColumnTwoName:ColumnTwoType
+* Models are singular (tables are plural)
+* rails generate model Reminder sent_at:datetime event_id:refrences
+* drop table
 ### Altair SignUp Query
 <pre>
   mutation {
@@ -81,13 +83,15 @@ heroku run rails c -a vanta-api-staging
 <pre>
  * Module not found: Can t resolve react-is.
   *[resolve](https://bobbyhadz.com/blog/react-module-not-found-cant-resolve)
+ * Rails foriegn key constaraint
+  * [foreign key constraint "XXX" cannot be implemented] (https://edgeguides.rubyonrails.org/active_record_postgresql.html)
 </pre>
  
  ---
  
  ###
  * Run Sidekiq in a new tab/session in your terminal
-  * `bundle exec sidekiq`
+  * `bundle exec sidekiq`  ---> go to localhost:// 5000/sideqick
  * PracticeRemindersJob.perform_async 
  ---
  
@@ -99,8 +103,8 @@ player.parents << parent
 ### Terminal history
 cat ~/.zsh_history
  
- parent =Parent.new( )
- parent.id="123445667788"
+  parent =Parent.new( )
+  arent.id="123445667788"
   parent.created_at=time.now.getutc
   parent.updated_at=Time.now.getutc
   player.parents << parent
