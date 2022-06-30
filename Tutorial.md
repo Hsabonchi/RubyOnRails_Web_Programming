@@ -46,6 +46,7 @@
 * Models are singular (tables are plural)
 * rails generate model Reminder sent_at:datetime event_id:refrences
 * drop table
+*  t.references :event, null: false, foreign_key: true, type: :uuid
 ### Altair SignUp Query
 <pre>
   mutation {
