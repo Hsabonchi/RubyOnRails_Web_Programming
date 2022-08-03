@@ -74,6 +74,14 @@ git pull origin staging
 git merge your-branch-name-here
 git push origin staging
 </pre>
+<pre>
+- Reset staging branch to main branch
+git checkout main
+git pull origin main
+git checkout staging
+git reset --hard origin/main
+git push origin staging --force
+<pre>
 
 <pre>
 https://dashboard.heroku.com/apps/vanta-api-staging
