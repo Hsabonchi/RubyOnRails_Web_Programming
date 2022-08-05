@@ -37,6 +37,8 @@
 | bundle exec rails dp:drop | drop the database|
 |  bundle exec rails dp:create  | create database|
 | bundle exec rails dp:seed| seed|
+|bundle exec rails s -p 5000  | run the server|
+
 - ENV['JWKS_RAW']
  
 ### ActiveRecord
@@ -81,7 +83,7 @@ git pull origin main
 git checkout staging
 git reset --hard origin/main
 git push origin staging --force
-<pre>
+</pre>
 
 <pre>
 https://dashboard.heroku.com/apps/vanta-api-staging
