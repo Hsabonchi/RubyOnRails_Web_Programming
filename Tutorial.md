@@ -88,6 +88,7 @@ git push origin staging --force
 <pre>
 https://dashboard.heroku.com/apps/vanta-api-staging
 heroku run rails c -a vanta-api-staging
+- https://vanta-api-staging.herokuapp.com/sidekiq/scheduled 
 </pre>
   
  
