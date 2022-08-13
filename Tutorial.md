@@ -83,6 +83,15 @@ git pull origin main
 git checkout staging
 git reset --hard origin/main
 git push origin staging --force
+
+
+git checkout main
+git pull origin main
+git checkout main-branch
+git rebase main
+git push origin main-branch --force
+
+
 </pre>
 
 <pre>
